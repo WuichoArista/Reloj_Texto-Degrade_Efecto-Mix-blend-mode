@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+}
+.contenedor{
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor_color{
+    background-color: #fff;
+    color: black;
+}
+
+.contenedor h1{
+    font-size: 100px;
+}
+
+.relojes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:200px;
+}
+
+.reloj_contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reloj{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    gap: 5px;
+}
+
+
+/* imagen efecto transparente */
+
+.contenedor_imagen{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Prueba.jpg);
+    background-size: cover;
+}
+
+.texto{
+    padding: 80px;
+    font-size: 150px;
+    background-color: white;
+    border-radius: 10px;
+    font-family: monospace;
+    font-weight: bolder;
+    mix-blend-mode: lighten;
+
+}
+
+.texto:hover{
+    animation: grande 1s infinite;
+}
+
+@keyframes grande {
+    0%{
+        transform: rotate(5deg);
+    }
+
+    25%{
+        transform: rotate(-5deg);
+    }
+    
+    50%{
+        transform: rotate(5deg);
+    }
+
+    75%{
+        transform: rotate(-5deg);
+    }
+
+    100%{
+        transform: rotate(5deg);
+    }
+}
+
+.contenedor_texto{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_degrade_contenedor{
+    background-image: linear-gradient(to right top, #444dff, #b600c5, #da0083, #db0046, #c60d0d);
+    -webkit-background-clip: text ;
+    
+}
+
+.texto_degrade{
+    font-size: 150px;
+    font-weight: bolder;
+    font-family: monospace;
+    color: transparent;
+}
+
+
+.contenedor-sketch{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
